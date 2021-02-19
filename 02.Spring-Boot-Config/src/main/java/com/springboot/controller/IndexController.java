@@ -20,6 +20,6 @@ public class IndexController {
 	
 	@RequestMapping("/")
 	String index() {
-		return testConfigBean.getName()+"，"+testConfigBean.getAge();
+		return testConfigBean.getName();
 	}
 }

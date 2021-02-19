@@ -10,8 +10,8 @@ import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Component;
 
 import com.springboot.bean.Student;
+import org.springframework.stereotype.Repository;
 
-@Component
 @Mapper
 public interface StudentMapper {
 	@Insert("insert into student(sno,sname,ssex) values(#{sno},#{name},#{sex})")

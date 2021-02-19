@@ -7,7 +7,7 @@ import com.springboot.bean.Student;
 import com.springboot.mapper.StudentMapper;
 import com.springboot.service.StudentService;
 
-@Service("studentService")
+@Service
 public class StudentServiceImp implements StudentService{
 
 	@Autowired

@@ -19,10 +19,10 @@ public class ApplicationTest {
 	@Test
     public void test1() throws Exception {
         Student student1 = this.studentService.queryStudentBySno("001");
-        System.out.println("学号" + student1.getSno() + "的学生姓名为：" + student1.getName());
+        System.out.println("学号 " + student1.getSno() + " 的学生姓名为：" + student1.getName());
         
         Student student2 = this.studentService.queryStudentBySno("001");
-        System.out.println("学号" + student2.getSno() + "的学生姓名为：" + student2.getName());
+        System.out.println("学号 " + student2.getSno() + " 的学生姓名为：" + student2.getName());
     }
 	
 	@Test

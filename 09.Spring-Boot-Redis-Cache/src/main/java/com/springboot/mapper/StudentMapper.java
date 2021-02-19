@@ -11,7 +11,6 @@ import org.springframework.cache.annotation.CacheConfig;
 import com.springboot.bean.Student;
 
 @Mapper
-@CacheConfig(cacheNames = "student")
 public interface StudentMapper {
 
 	@Update("update student set sname=#{name},ssex=#{sex} where sno=#{sno}")

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Configuration
 @ConfigurationProperties(prefix="test")
 @PropertySource("classpath:test.properties")
-@Component
+//@Component // @Configuration里面已经包括
 public class TestConfigBean {
 	private String name;
 	private int age;
