@@ -87,4 +87,3 @@ logging:
     com:
       springboot:
         mapper: debug
-     

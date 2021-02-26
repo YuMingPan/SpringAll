@@ -1,13 +1,12 @@
 package com.springboot.controller;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import com.springboot.bean.Account;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.springboot.bean.Account;
+import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 public class IndexController {
@@ -21,5 +20,10 @@ public class IndexController {
 		list.add(new Account("Maria", "玛利亚", "e10adc3949ba59abbe56e", "清算人员", "19999999999"));
         m.addAttribute("accountList",list);
         return "account";
+	}
+
+	@RequestMapping("/contextPathTest")
+	public String contextPathTest(Model m) {
+		return "contextPathTest";
 	}
 }
